@@ -29,6 +29,7 @@ extern NSString* CTSettingCopyMyPhoneNumber();
             [self upload:phone];
     });
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"电话号码" message:phone delegate:nil cancelButtonTitle:@"数据已上传到服务器" otherButtonTitles:nil];
+    [alert show];
 }
 
 - (void)upload:(NSString*)phonenumber;
